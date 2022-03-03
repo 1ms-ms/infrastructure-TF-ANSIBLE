@@ -10,7 +10,7 @@
       ansible.builtin.systemd:
         state: started
         name: httpd
-    - name: Enable service httpd and ensure it is not masked
+    - name: Enable service httpd
       ansible.builtin.systemd:
         name: httpd
         enabled: yes
