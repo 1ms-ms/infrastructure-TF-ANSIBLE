@@ -1,4 +1,5 @@
 - name: Configure httpd server
   hosts: aws_ec2
+  become: true
   roles:
     - role: server
