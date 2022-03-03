@@ -3,11 +3,11 @@
     name: httpd
     state: latest
 - name: Make sure a service unit is running
-  ansible.builtin.systemd:
+  systemd:
     state: started
     name: httpd
 - name: Enable service httpd
-  ansible.builtin.systemd:
+  systemd:
     name: httpd
     enabled: yes    
     # - name: debug
