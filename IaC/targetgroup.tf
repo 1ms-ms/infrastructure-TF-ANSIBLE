@@ -14,3 +14,9 @@ resource "aws_lb_target_group" "tg" {
     matcher = "200"
   }
 }
+
+resource "aws_alb_target_group_attachment" "tgattachment" {
+  count            = 3
+  target_group_arn = aws_lb_target_group.tg.arn
+  target_id        = element(aws_instance.myec2.*.id, count.index)
+}
