@@ -1,0 +1,4 @@
+- name: Configure httpd server
+  hosts: aws_ec2
+  roles:
+    - role: tasks
