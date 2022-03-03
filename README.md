@@ -13,4 +13,5 @@ The code shown in ansible folder configures 3 EC2 instances created earlier. Thi
 ├── server.yml
 ├── .inventory
 │   └── my_aws_ec2.yml
-├── ansible.cfg```
+├── ansible.cfg
+```
